@@ -1,0 +1,34 @@
+@font-face {
+    font-family: "caviar";
+    src: url(../Font/CaviarDreams.ttf) format('truetype');
+}
+
+.portofolio{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .p-wrapper{
+        width: 60%;
+        margin-top: 25px;
+        text-align: center;
+        .p-title{
+            margin-bottom: 20px;
+            padding-bottom: 20px;
+            border-bottom: 1px solid black;
+            font-family: 'caviar';
+            font-size: 45px;
+        }
+        .p-desc{
+            font-size: 20px;
+        }
+    }
+    .p-items{
+        width: 100%;
+        margin-top: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+}

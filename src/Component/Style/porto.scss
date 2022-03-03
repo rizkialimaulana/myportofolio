@@ -1,0 +1,32 @@
+.porto{
+    width: 30%;
+    height: 40vh;
+    border-radius: 10px;
+    margin: 20px 10px;
+    overflow: hidden;
+    box-shadow: 0 0 0.5rem gray;
+    .topbar{
+        width: 100%;
+        height: 20px;
+        background-color: rgb(85, 67, 54);
+        display: flex;
+        align-items: center;
+        position: sticky;
+        z-index: 2;
+        .circle{
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            margin: 0 7px;
+            background-color: white;
+        }
+    }
+    .portos{
+        width: 100%;
+        object-fit: contain;
+        transition: all 10s ease;
+        &:hover{
+            transform: translateY(-100%);
+        }
+    }
+}

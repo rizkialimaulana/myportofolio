@@ -1,0 +1,54 @@
+@font-face {
+    font-family: "amerika";
+    src: url(../Font/AmerikaSignatureDemo-Regular.ttf) format('truetype');
+}
+
+.home{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .bg{
+        width: 450px;
+        height: 450px;
+        background: linear-gradient(-45deg, #998b64, #9986, rgb(121, 101, 72));
+        background-size: 400% 400%;
+        border: 1rem solid white;
+        box-shadow: .5rem 1rem 2rem .5rem black;
+        position: relative;
+        margin-right: 12cm;
+        animation: gradient 15s ease infinite;
+        @keyframes gradient {
+            0% {
+            	background-position: 0% 25%;
+            }
+            50% {
+            	background-position: 50% 25%;
+            }
+            100% {
+            	background-position: 0% 25%;
+            }
+        }
+    }
+    .h-wrapper{
+        padding: 20px;
+        position: absolute;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .h-title{
+            font-size: 150px;
+            font-weight: 100;
+            margin-bottom: 40px;
+            background: transparent;
+            font-family: 'amerika';
+        }
+        .h-desc{
+            font-size: 30px;
+            letter-spacing: .5rem;
+            background: transparent;
+        }
+    }
+}

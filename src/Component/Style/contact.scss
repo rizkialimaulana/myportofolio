@@ -1,0 +1,149 @@
+@font-face {
+    font-family: 'louis';
+    src: url(../Font/Roboto-Black.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'caviar';
+    src: url(../Font/CaviarDreams.ttf) format('truetype');
+}
+
+.contact{
+    height: 100vh;
+    display: flex;
+    .c-left{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .contact-wrapper{
+            margin-left: 20px;
+            h1{
+                font-size: 50px;
+                margin-bottom: 20px;
+                font-family: 'louis';
+            }
+            .c-item{
+                display: flex;
+                align-items: center;
+                margin-bottom: 20px;
+                .c-text{
+                    font-size: 15px;
+                    font-weight: 600;
+                    margin-left: 15px;
+                }
+                .c-icon{
+                    padding: 8px;
+                    width: 20px;
+                    height: 20px;
+                    border-radius: 50%;
+                    color: white;
+                    background-color: #998b64;
+                }
+            }
+        }
+    }
+    .c-right{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        .email-title{
+            font-size: 44px;
+            margin-bottom: 20px;
+            font-family: 'caviar';
+            padding-bottom: 10px;
+            border-bottom: 1px solid black;
+            width: fit-content;
+        }
+        form{
+            width: 75%;
+            display: flex;
+            flex-direction: column;
+            .input-message{
+                margin-bottom: 20px;
+                padding: 10px;
+                border: none;
+                border-bottom: 1px solid #998b64;
+                &:focus{
+                    outline: none;
+                }
+            }
+            textarea{
+                padding: 20px;
+                border-radius: 1rem;
+            }
+            .submit{
+                margin-top: 20px;
+                padding: 10px 20px;
+                width: fit-content;
+                color: white;
+                border-radius: 1rem;
+                background-color: #998b64;
+                cursor: pointer;
+            }
+            .sent{
+                font-family: sans-serif;
+                display: flex;
+                align-items: center;
+                padding: 10px;
+                width: fit-content;
+                background-color: lightgreen;
+                margin-top: 20px;
+                .check{
+                    padding: 10px;
+                    color: white;
+                    background-color: green;
+                    width: 15px;
+                    height: 15px;
+                    font-size: 14px;
+                    border-radius: 50%;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin-right: 15px;
+                    transition: all .3s ease;
+                }
+            }
+        }
+    }
+    @media screen and(max-width: 375px){
+        flex-direction: column;
+        .c-left{
+            width: 100%;
+            .contact-wrapper{
+                margin: 0;
+                h1{
+                    font-size: 20px;
+                }
+            }
+        }
+        .c-right{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            .email-title{
+                font-size: 30px;
+                text-align: left;
+            }
+            form{
+                padding: 10px;
+                width: 100%;
+                .input-message{
+                    width: 75%;
+                }
+                textarea{
+                    width: 70%;
+                    border-radius: .5rem;
+                }
+            }
+            .sent{
+                font-size: 12px;
+                background-color: transparent;
+                color: green;
+            }
+        }
+    }
+}
